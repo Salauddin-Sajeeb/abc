@@ -3,7 +3,7 @@ import './App.css';
 import Services from './Comonents/Services/Services';
 import Footer from './Comonents/Footer/Footer';
 import Service from './Comonents/Service/Service';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './Comonents/Header/Header';
 import Home from './Comonents/Home/Home';
 import NotFound from './Comonents/NotFound/NotFound';
@@ -15,29 +15,35 @@ function App() {
     <div>
       <Router>
         <Header></Header>
-        <Route path="/services">
-          <Services></Services>
+        <Switch>
+          <Route path="/services">
+            <Services></Services>
+          </Route>
+          <Route path="/about">
+            <About></About>
 
-        </Route>
-        <Route path="/about">
-          <About></About>
+          </Route>
+          <Route path="/home">
+            <Home></Home>
+          </Route>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
 
-        </Route>
-        <Route path="/home">
-          <Home></Home>
-        </Route>
-        <Route exact path="/">
-          <Home></Home>
-        </Route>
-        <Route path="/contact">
-          <Contact></Contact>
-        </Route>
 
-        <Footer></Footer>
+        </Switch>
+
       </Router>
 
 
 
+      <Footer></Footer>
     </div>
   );
 }

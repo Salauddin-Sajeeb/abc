@@ -3,8 +3,8 @@ import './footer.css'
 
 const Footer = () => {
     return (
-        <div className="footer">
-            <h3 text-white>Contact us</h3>
+        <div className="footer mt-5">
+            <p className="text-white text-center">All rights reserved and protected</p>
         </div>
     );
 };

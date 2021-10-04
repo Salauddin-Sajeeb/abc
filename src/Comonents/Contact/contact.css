@@ -2,4 +2,16 @@
 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    height: 80%;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+.contact-body
+{
+    height: 400px;
+    padding-bottom: 10px;
+}
+.form
+{
+    padding-bottom: 10px;
 }

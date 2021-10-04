@@ -1,9 +1,10 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
 import './about.css'
 
 const About = () => {
     return (
-        <div>
+        <div className="">
             <h1 className="text-center mt-5">Meet Our Experts</h1>
             <div>
                 <h2 className="text-info text-center"> THE BEST PERSONAL TRAINERS IN THE TOWN</h2>
@@ -11,7 +12,7 @@ const About = () => {
             </div>
             <div className="container mt-5">
 
-                <img className="img-fluid" src="https://thumbs.dreamstime.com/b/african-personal-trainer-helping-men-to-fill-membership-form-health-club-47294389.jpg" alt="" />
+                <img className="img-fluid pb-5" src="https://thumbs.dreamstime.com/b/african-personal-trainer-helping-men-to-fill-membership-form-health-club-47294389.jpg" alt="" />
 
 
                 <div>
@@ -24,6 +25,7 @@ const About = () => {
 
 
             </div>
+
 
         </div>
     );
