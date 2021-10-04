@@ -1,0 +1,27 @@
+.service
+{
+   height: 480px;
+   font-weight: 300; 
+   width: 100%;
+   margin-top: 20px;
+   font-size: 10px;
+   background-color: slategrey;
+   border-radius: 10px;
+   color: snow;
+   box-shadow: 5px sloid red;
+
+}
+.service img {
+    width:  100%;
+    height: 220px;
+    border: blue;
+    
+    margin-bottom: 20px;
+    padding-top: 10px;
+    
+}
+.background
+{
+    color: black;
+    padding: 10px;
+}

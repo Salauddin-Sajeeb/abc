@@ -1,0 +1,16 @@
+.body-container
+{
+
+    display: grid;
+    grid-template-columns: 3fr;
+    
+}
+.body-items
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+   width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+}
